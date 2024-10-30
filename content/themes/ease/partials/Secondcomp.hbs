@@ -1,5 +1,5 @@
-<section class="carousel-section">
-    <div class="carousel-container">
+<section class="carousel-section bg-gray-100">
+    <div class="carousel-container my-24">
         <h4 class="carousel-title">Our clients</h4>
         <h5 class="carousel-subtitle">Driving technology for leading brands</h5>
         <div class="swiper-container">
@@ -24,16 +24,15 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script>
     const swiper = new Swiper('.swiper-container', {
-        slidesPerView: 5,
-        spaceBetween: 30,
-        slidesToScroll: 5,
+        slidesPerView: 'auto',
+        spaceBetween: 20,
         speed: 300,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
         },
         autoplay: {
-            delay: 5000,
+            delay: 3000,
             disableOnInteraction: false,
         },
         loop: true,
@@ -57,10 +56,29 @@
 }
 
 .swiper-slide {
-    width: 220px;
-    height: 100px; /* Adjust as necessary */
+    width: calc(100% / 2.5); /* Adjusts the slide width */
+    max-width: 220px;
+    height: 100px;
     background-size: cover;
     background-position: center;
-    margin-right: 10px;
+}
+
+.swiper-pagination {
+    position: relative;
+    margin-top: 3em;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (min-width: 640px) {
+    .swiper-slide { width: calc(100% / 3); }
+}
+
+@media (min-width: 768px) {
+    .swiper-slide { width: calc(100% / 4); }
+}
+
+@media (min-width: 1024px) {
+    .swiper-slide { width: calc(100% / 5); }
 }
 </style>
