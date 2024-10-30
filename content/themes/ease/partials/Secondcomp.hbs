@@ -1,0 +1,66 @@
+<section class="carousel-section">
+    <div class="carousel-container">
+        <h4 class="carousel-title">Our clients</h4>
+        <h5 class="carousel-subtitle">Driving technology for leading brands</h5>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('https://beamdata.ai/wp-content/uploads/2022/09/globeandmail.png');"></div>
+                <div class="swiper-slide" style="background-image: url('https://beamdata.ai/wp-content/uploads/2022/09/samsung.png');"></div>
+                <div class="swiper-slide" style="background-image: url('https://beamdata.ai/wp-content/uploads/2022/09/nuport.png');"></div>
+                <div class="swiper-slide" style="background-image: url('https://beamdata.ai/wp-content/uploads/2022/09/sponsorcircle.png');"></div>
+                <div class="swiper-slide" style="background-image: url('https://beamdata.ai/wp-content/uploads/2022/09/toromont.png');"></div>
+                <div class="swiper-slide" style="background-image: url('https://beamdata.ai/wp-content/uploads/2022/10/mars.png');"></div>
+                <div class="swiper-slide" style="background-image: url('https://beamdata.ai/wp-content/uploads/2022/10/communitech.png');"></div>
+                <div class="swiper-slide" style="background-image: url('https://beamdata.ai/wp-content/uploads/2022/10/autohunter.png');"></div>
+                <div class="swiper-slide" style="background-image: url('https://beamdata.ai/wp-content/uploads/2022/10/ClassicCars.png');"></div>
+                <div class="swiper-slide" style="background-image: url('https://beamdata.ai/wp-content/uploads/2022/10/barretjackson.png');"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper-container', {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        slidesToScroll: 5,
+        speed: 300,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+    });
+</script>
+
+<style>
+.carousel-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.carousel-subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.swiper-slide {
+    width: 220px;
+    height: 100px; /* Adjust as necessary */
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+</style>
